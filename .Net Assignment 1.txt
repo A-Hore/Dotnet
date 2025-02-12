@@ -1,0 +1,35 @@
+1)   int x = 10;
+     if (x = 5)
+     Console.WriteLine("True");
+     else
+     Console.WriteLine("False");
+
+ANS. It will throw an error because we are using single equal to sign in the if statement
+
+
+2)    int a = 10, b = 20, c = 30;
+      if (a > b && a > c)
+      Console.WriteLine("A is largest");
+      else if (b > a && b > c)
+      Console.WriteLine("B is largest");
+      else
+      Console.WriteLine("C is largest");
+
+
+ANS.  
+
+
+3)  int num = 2;
+    switch (num + 1) {
+    case 1: Console.Write("One");
+    break;
+    case 2: Console.Write("Two");
+      break;
+case 3: Console.Write("Three");
+case 4: Console.Write("Four");
+break;
+default: Console.Write("Default");
+}
+
+
+ANS. 
