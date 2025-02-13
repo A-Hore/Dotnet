@@ -1,0 +1,72 @@
+1) Sum method
+
+ public static int ArraySum(int[] arr)
+{
+    int sum = 0; 
+    for (int i = 0; i < arr.Length; i++) 
+    {
+        sum += arr[i];
+    }
+    return sum; 
+}
+
+2) Missing Number
+
+public static int FindMissNumber(int[] arr, int n)
+{
+    
+    int expectedSum = n * (n + 1) / 2;
+
+    int actualSum = 0;
+
+    for (int i = 0; i < arr.Length; i++)
+    {
+        actualSum += arr[i];
+    }
+
+
+    return expectedSum - actualSum;
+}
+
+3) Reverse an Array in Place
+
+public static void ReverseArray(int[] arr)
+{
+    if (arr == null || arr.Length <= 1)
+    {
+        return;
+    }
+
+    for (int start = 0, end = arr.Length - 1; start < end; start++, end--)
+    {
+        
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+    }
+}
+
+4) Find First Non-Repeating Character in a String
+
+public static char FirstUniqueChar(string str)
+{
+    int[] count = new int[256];
+
+    for (int i = 0; i < str.Length; i++)
+    {
+        count[str[i]]++;
+    }
+
+    for (int i = 0; i < str.Length; i++)
+    {
+        if (count[str[i]] == 1)
+        {
+            return str[i];
+        }
+    }
+
+    return '\0';
+}
+
+
+
